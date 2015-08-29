@@ -2,7 +2,7 @@
   "name": "algebra.structures.identity",
   "version": "0.1.0",
   "description": "Identity structure for use in functional programming.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "gulp test"
   },

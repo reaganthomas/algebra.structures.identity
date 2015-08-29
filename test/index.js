@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  var Identity = require('../src/index.js');
+  var Identity = require('../lib/index.js');
   var laws = require('algebra.laws');
 
   function makeId(a)    { return new Identity(a); }
