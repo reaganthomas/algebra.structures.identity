@@ -2,6 +2,7 @@
   'use strict';
 
   var Identity = require('../lib/index.js');
+  var assert = require('assert');
   var laws = require('algebra.laws');
 
   function makeId(a)    { return new Identity(a); }
@@ -36,6 +37,12 @@
     describe('Monad', function() {
       it('1. Left Identity',  function() { laws.monad.leftIdentity(makeId).asTest()(); });
       it('2. Right Identity', function() { laws.monad.rightIdentity(makeId).asTest()(); });
+    });
+  });
+
+  describe('Inspect', function() {
+    it('should show string representaiton of Identity', function() {
+      assert.equal(Identity(1).inspect(), 'Identity(1)');
     });
   });
 })();

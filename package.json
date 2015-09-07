@@ -1,6 +1,6 @@
 {
   "name": "algebra.structures.identity",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Identity structure for use in functional programming.",
   "main": "lib/index.js",
   "scripts": {
